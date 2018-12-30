@@ -62,7 +62,6 @@ public class BaseTest {
 		report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
 	}
 
-
 	@AfterClass
 	public void endTest(){
 		report.endTest(test);

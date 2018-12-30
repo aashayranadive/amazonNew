@@ -34,24 +34,21 @@ public class commonPath extends BaseTest {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		//after execution, you could see a folder "FailedTestsScreenshots" under src folder
 		String destination = System.getProperty("user.dir") + "/TestsScreenshots/"+dateName+".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return;
-		}
+	}
 	public static void reporting(String Description, String Expected, String Actual, String StepStatus) throws Exception{
-		//String screenshotPath = getScreenshot(driver);
 		if(StepStatus.toLowerCase().contains("pass")) {
 			test.log(LogStatus.PASS, Description, Actual);
 		}
 		else if (StepStatus.toLowerCase().contains("fail")) {
 			test.log(LogStatus.FAIL, Description,Actual);
-			//test.log(LogStatus.FAIL, test.addScreenCapture(screenshotPath));
 		}
 	}
 
-	
+
 }
 
 

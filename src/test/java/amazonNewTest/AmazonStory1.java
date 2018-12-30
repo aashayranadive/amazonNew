@@ -27,7 +27,6 @@ public class AmazonStory1 extends BaseTest{
 		KindlePage kindlePage = new KindlePage(driver);
 
 		//Test Begins
-
 		test = report.startTest("Amazon Test For Kindle E-Reader Shopping");
 
 		//Step 1: Tap on Hamburger Button.
@@ -42,7 +41,7 @@ public class AmazonStory1 extends BaseTest{
 		kindlePage.selectKindleBasic();
 	}
 
-@AfterMethod
+	@AfterMethod
 	public void tearDown(ITestResult result) throws Exception
 	{
 		if(ITestResult.FAILURE==result.getStatus())
