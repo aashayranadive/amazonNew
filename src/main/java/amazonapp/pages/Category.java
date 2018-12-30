@@ -7,10 +7,12 @@ import org.testng.Assert;
 
 import amazonapp.util.commonPath;
 import io.appium.java_client.AppiumDriver;
-
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 public class Category extends commonPath
 {
+
 	@FindBy(xpath="//android.view.View[@content-desc='Kindle E-Readers & eBooks']")
 	private WebElement kindleCat;
 
@@ -27,19 +29,21 @@ public class Category extends commonPath
 			if(kindleCat.isDisplayed()) {
 				kindleCat.click();
 				Log.info("Kindle Category is selected");
-				reporting("Kindle Category selection", "Kindle category should be clicked",
-						"Kindle category is be clicked", "pass");
+				reporting("Select Kindle Category", "Kindle Category should be clicked",
+						"Kindle Category is clicked", "pass");
+
 			}
 			else {Log.info("Kindle Category is not Tapped");
-			reporting("Kindle Category Selection", "Kindle Category should be clicked",
+			reporting("Select Kindle Category", "Kindle Category should be clicked",
 					"Kindle Category is not clicked", "fail");
+
 			Assert.fail();
 			}
 		}
 		catch (Exception e) {
 		}
 	}
-	
+
 	public void selKindleEreader() throws Exception{
 
 		try{ if(kindleEreader.isDisplayed()) {

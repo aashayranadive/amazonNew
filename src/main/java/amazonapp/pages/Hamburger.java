@@ -7,11 +7,16 @@ import org.testng.Assert;
 
 import amazonapp.util.commonPath;
 import io.appium.java_client.AppiumDriver;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
 
 
 public class Hamburger extends commonPath
 {
+
+
 	@FindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[2]")
 	private WebElement ShopByCat;
 
@@ -20,8 +25,8 @@ public class Hamburger extends commonPath
 		PageFactory.initElements(driver, this);
 
 	}
-
 	public void tapShopByCategory() throws Exception{
+
 		try {if(ShopByCat.isDisplayed()) {
 			ShopByCat.click();
 			Log.info("Shop By Category is Tapped");

@@ -2,19 +2,38 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-12-14T06:07:06Z" name="Suite" finished-at="2018-12-14T06:07:25Z" duration-ms="19698">
+  <suite started-at="2018-12-30T15:07:01Z" name="Suite" finished-at="2018-12-30T15:07:20Z" duration-ms="19569">
     <groups>
     </groups>
-    <test started-at="2018-12-14T06:07:06Z" name="Test" finished-at="2018-12-14T06:07:25Z" duration-ms="19698">
+    <test started-at="2018-12-30T15:07:01Z" name="Test" finished-at="2018-12-30T15:07:20Z" duration-ms="19569">
       <class name="amazonNewTest.AmazonStory1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:amazonNewTest.AmazonStory1@14555e0a]" started-at="2018-12-14T06:06:54Z" name="setup" finished-at="2018-12-14T06:07:06Z" duration-ms="11679" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:amazonNewTest.AmazonStory1@2d52216b]" started-at="2018-12-30T15:06:51Z" name="setup" finished-at="2018-12-30T15:07:01Z" duration-ms="9605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="KindleShopping_Test()[pri:0, instance:amazonNewTest.AmazonStory1@14555e0a]" started-at="2018-12-14T06:07:06Z" name="KindleShopping_Test" finished-at="2018-12-14T06:07:25Z" duration-ms="19676" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:amazonNewTest.AmazonStory1@2d52216b]" started-at="2018-12-30T15:07:01Z" name="startTest" finished-at="2018-12-30T15:07:01Z" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="KindleShopping_Test()[pri:0, instance:amazonNewTest.AmazonStory1@2d52216b]" started-at="2018-12-30T15:07:01Z" name="KindleShopping_Test" description="Amazon Test For Kindle Shopping" finished-at="2018-12-30T15:07:20Z" duration-ms="18508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KindleShopping_Test -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:amazonNewTest.AmazonStory1@2d52216b]" started-at="2018-12-30T15:07:20Z" name="tearDown" finished-at="2018-12-30T15:07:20Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KindleShopping_Test status=SUCCESS method=AmazonStory1.KindleShopping_Test()[pri:0, instance:amazonNewTest.AmazonStory1@2d52216b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:amazonNewTest.AmazonStory1@2d52216b]" started-at="2018-12-30T15:07:20Z" name="endTest" finished-at="2018-12-30T15:07:20Z" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
       </class> <!-- amazonNewTest.AmazonStory1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

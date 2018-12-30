@@ -6,14 +6,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import amazonapp.util.commonPath;
-import amazonapp.util.mainDriver;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-
+import com.relevantcodes.extentreports.LogStatus;
 
 public class HomePage extends commonPath
 {
+
+
 	@FindBy(id="in.amazon.mShop.android.shopping:id/action_bar_burger_icon")
 	private WebElement Hamburger;
 
@@ -28,8 +30,7 @@ public class HomePage extends commonPath
 			if(Hamburger.isDisplayed()) {
 				Hamburger.click();
 				Log.info("Hamburger Icon is Tapped");
-				reporting("Hamburger Icon selection", "Hamburger icon should be clicked",
-						"Hamburger Icon is selected", "pass");
+				reporting("Hamburger Icon selection", "Hamburger icon should be clicked", "Hamburger Icon is selected", "pass");
 			}
 			else {
 				Log.info("Hamburger Icon is not Tapped");
@@ -41,8 +42,6 @@ public class HomePage extends commonPath
 		catch (Exception e) {
 		}
 	}
-
-
 
 }
 
